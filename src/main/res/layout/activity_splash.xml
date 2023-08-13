@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/dark_salmon"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBack"
+        android:layout_width="292dp"
+        android:layout_height="319dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/salmon"
+        android:focusableInTouchMode="true"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/artworkIV"
+            android:layout_width="380dp"
+            android:layout_height="266dp"
+            android:layout_gravity="top|center"
+            android:background="@color/dark_salmon"
+            android:src="@drawable/splash" />
+
+        <TextView
+            android:id="@+id/nameDateTV"
+            android:layout_width="380dp"
+            android:layout_height="53dp"
+            android:layout_gravity="bottom|center"
+            android:background="@color/black"
+            android:fontFamily="@font/genshin"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/salmon"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

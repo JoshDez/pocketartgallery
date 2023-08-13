@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBack"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/dark_salmon"
+        android:layout_height="361dp"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/artworkIV"
+            android:layout_width="380dp"
+            android:layout_height="284dp"
+            android:layout_gravity="top|center"
+            android:background="@color/dark_red" />
+
+        <TextView
+            android:id="@+id/nameDateTV"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@color/salmon"
+            android:fontFamily="@font/genshin"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Title \n\n July 01, 2023"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

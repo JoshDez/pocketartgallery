@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PocketArtGallery</string>
+    <string name="my_gallery">My Gallery</string>
+    <string name="artwork">Artwork</string>
+    <string name="empty_string">empty</string>
+    <string name="plus">+</string>
+
+
+    <!-- Preview Artwork -->
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+    <string name="preview">Preview</string>
+
+
+    <!-- Save Artwork -->
+    <string name="title">Enter Title of Artwork</string>
+    <string name="date">Date of Creation</string>
+    <string name="desc">Enter Description of Artwork</string>
+    <string name="dd">DD</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="saveArtwork">Save Artwork</string>
+</resources>

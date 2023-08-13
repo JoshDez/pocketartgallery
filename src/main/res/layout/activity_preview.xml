@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/back"
+            android:backgroundTint="@color/gray"
+            android:text="@string/empty_string"
+            android:textColor="@color/none"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="247dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/genshin"
+            android:text="@string/artwork"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="27sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041"
+            tools:ignore="TextSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="639dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_red"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VisualLintBounds">
+
+            <ImageView
+                android:id="@+id/artworkIV"
+                android:layout_width="match_parent"
+                android:layout_height="403dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/salmon"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/salmon"
+                android:fontFamily="@font/genshin"
+                android:padding="10dp"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,TextFields" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/dateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/salmon"
+                android:fontFamily="@font/genshin"
+                android:padding="10dp"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TextFields,TextContrastCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/descTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/salmon"
+                android:fontFamily="@font/genshin"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TextFields,TextContrastCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/scarlet"
+                android:padding="10dp"
+                android:text="@string/delete"
+                android:textColor="@color/salmon"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/confirmBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:padding="10dp"
+                android:text="@string/confirm"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
