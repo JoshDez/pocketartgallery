@@ -1,5 +1,5 @@
 # pocketartgallery
-PocketArtGallery is an app that stores artworks and their descriptions. Think of it as a Diary but for artists
+PocketArtGallery is an app that allows one to store one's own artworks with their descriptions. Its purpose is to allow artists to have their own personal gallery that could help them remember and reminisce about their artworks.
 
 How to Install:
 
